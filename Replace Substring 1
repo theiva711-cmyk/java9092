@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        String str1=s.nextLine();
+        String str2=s.nextLine();
+                        
+
+      int x=s.nextInt();
+        int y=s.nextInt();
+        
+        
+        StringBuilder sb=new StringBuilder(str1);
+         sb.replace(x,y,str2);
+        System.out.println(sb);
+        
+    }
+}
