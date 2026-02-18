@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+     Scanner s=new Scanner(System.in);
+        int N=s.nextInt();
+        if(N<=1){
+            System.out.println("not prime");
+        }
+        else{
+            boolean isprime=true;
+            for (int i=2;i*i<=N;i++){
+                if (N%i==0){
+                    isprime=false;
+                    break;
+                }
+            }
+            if (isprime){
+                System.out.println("Prime");
+            }
+            else{
+                System.out.println("Not Prime");
+            }
+        }
+            
+    }
+}
